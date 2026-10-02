@@ -1,25 +1,25 @@
 class Mdrenum < Formula
   desc "Keep numbered, reference-style Markdown links in sequential order"
   homepage "https://github.com/dce/mdrenum"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/dce/mdrenum/releases/download/v#{version}/mdrenum-macos-arm64.tar.gz"
-      sha256 "85c33a9e385f0a09ab78201819c74430af5f77bcc7764f4acb437f7b3055877c"
+      sha256 "6a050850583e7b254b2afead69a6776514fe51a1a75617b6c2855c353c3aa70d"
     else
       url "https://github.com/dce/mdrenum/releases/download/v#{version}/mdrenum-macos-x64.tar.gz"
-      sha256 "39c7f8f600c20aea141221717dbe7274763f174e095b333a0bd6ad0539898ad8"
+      sha256 "2f6c66ddcebae36d363fcee52923ab0da0e10c47b3387f7b1636c390828d7d7f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/dce/mdrenum/releases/download/v#{version}/mdrenum-linux-arm64.tar.gz"
-      sha256 "771d99e7378bba028d1c268e0db895fcdb6a2b5cf4483022271846f9b6e87a70"
+      sha256 "2597cd9bd7eb20272661331c19e806ca7f46ef8691df4d73c0daae6d26f776ea"
     else
       url "https://github.com/dce/mdrenum/releases/download/v#{version}/mdrenum-linux-x64.tar.gz"
-      sha256 "d20209ed71cdebb6d400364a452ed1a6125ba6c950080c5688d3d02aac52f465"
+      sha256 "b2241af7329e7a6a7772df1c065ec6e2ade90a8ab640f6e37cf7cd3132ff56ad"
     end
   end
 
